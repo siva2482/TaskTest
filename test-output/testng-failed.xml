@@ -6,24 +6,10 @@
       <class name="Test.UploadTest">
         <methods>
           <include name="run"/>
-          <include name="setup"/>
           <include name="init"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- Test.UploadTest -->
-      <class name="Test.TaskTest">
-        <methods>
-          <include name="setup"/>
-          <include name="init"/>
-          <include name="run"/>
-        </methods>
-      </class> <!-- Test.TaskTest -->
-      <class name="Test.LoginTest">
-        <methods>
-          <include name="run"/>
-          <include name="setup"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- Test.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

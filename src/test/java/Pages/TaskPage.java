@@ -3,6 +3,7 @@ package Pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,8 +34,8 @@ public class TaskPage extends TestBase{
 		}
 	 public void enterTask()
 	 {
-		 TitleBox.sendKeys("UnitTesting");
-		 TitleText.sendKeys("TO check each functionalities ofthe system");
+		 TitleBox.sendKeys("Example Testing");
+		 TitleText.sendKeys("TO check each integration functionalities ofthe system");
 		 TitleDate.sendKeys("12/02/2021");
 		 Taskbutton.click();
 		 
@@ -45,15 +46,40 @@ public class TaskPage extends TestBase{
 		// driver.findElement(By.xpath("(//div//child::div[@class='card w-100']//input[@type='file'])[1]")).sendKeys("D://input.txt");
 		 //driver.findElement(By.xpath("(//button[contains(text(),'Upload')])[1]")).click();
 		 List<WebElement> tasks=driver.findElements(By.xpath("//div//child::h5"));
-		 for(int i=0;i<tasks.size();i++)
+		 try
 		 {
-		 if(tasks.get(i).getText().equalsIgnoreCase("Sanity testing"))
+		 for(WebElement e:tasks)
 		 {
-			 driver.findElement(By.xpath("//div//button[contains(text(),'Delete')]")).click();
+		 if(e.getText().equalsIgnoreCase("Selenium"))
+		 {
+			 e.findElement(By.xpath("//div//button[contains(text(),'Delete')]")).click();
+		 }
+		 }
+		 }catch(StaleElementReferenceException s)
+		 {
+			 System.out.println(s);
 		 }
 		 
+	 
 	 }
+		 public void checkDelete()
+		 {
+			 int count=0;
+		 
+			 List<WebElement> tasks=driver.findElements(By.xpath("//div//child::h5"));
+			 for(WebElement x:tasks)
+			 {
+			 if(x.getText().equalsIgnoreCase("Selinium"))
+			 {
+				count++; 
+			 }
+			 }
+			 if(count==0)
+			 {
+				 System.out.println("Item Deleted");
+			 }
+		 
 	
+		 }
 
-}
 }

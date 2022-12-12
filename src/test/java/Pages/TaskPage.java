@@ -52,7 +52,7 @@ public class TaskPage extends TestBase{
 		 {
 		 if(e.getText().equalsIgnoreCase("Selenium"))
 		 {
-			 e.findElement(By.xpath("//div//button[contains(text(),'Delete')]")).click();
+			 driver.findElement(By.xpath("//div//button[contains(text(),'Delete')]")).click();
 		 }
 		 }
 		 }catch(StaleElementReferenceException s)

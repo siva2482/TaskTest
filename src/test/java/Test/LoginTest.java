@@ -24,6 +24,7 @@ public class LoginTest extends TestBase {
 	{
 		lobj.enterLogin();
 		Assert.assertEquals(lobj.url(),"https://am.dbw0bjyvnpgi3.amplifyapp.com/login?redirect=%2F");
+		System.out.println("LOGIN SUCCESSFULL.TASK PAGE REACHED");
 	}
 	
 

@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-11T19:23:14 CST" name="Default suite" finished-at="2022-12-11T19:23:14 CST" duration-ms="339">
+  <suite started-at="2022-12-11T21:45:31 CST" name="Suite" finished-at="2022-12-11T21:45:32 CST" duration-ms="955">
     <groups>
     </groups>
-    <test started-at="2022-12-11T19:23:14 CST" name="Default test" finished-at="2022-12-11T19:23:14 CST" duration-ms="339">
-      <class name="Test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.LoginTest@14cd1699]" started-at="2022-12-11T19:23:11 CST" name="setup" finished-at="2022-12-11T19:23:14 CST" duration-ms="3323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="init()[pri:0, instance:Test.LoginTest@14cd1699]" started-at="2022-12-11T19:23:14 CST" name="init" finished-at="2022-12-11T19:23:14 CST" duration-ms="27" status="PASS">
+    <test started-at="2022-12-11T21:45:31 CST" name="Test" finished-at="2022-12-11T21:45:32 CST" duration-ms="955">
+      <class name="Test.TaskTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:Test.TaskTest@1bb5a082]" started-at="2022-12-11T21:45:31 CST" name="init" finished-at="2022-12-11T21:45:31 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="run()[pri:0, instance:Test.LoginTest@14cd1699]" started-at="2022-12-11T19:23:14 CST" name="run" finished-at="2022-12-11T19:23:14 CST" duration-ms="263" status="PASS">
+        <test-method signature="run()[pri:0, instance:Test.TaskTest@1bb5a082]" started-at="2022-12-11T21:45:31 CST" name="run" finished-at="2022-12-11T21:45:32 CST" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- Test.TaskTest -->
+      <class name="Test.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.LoginTest@77888435]" started-at="2022-12-11T21:45:28 CST" name="setup" finished-at="2022-12-11T21:45:31 CST" duration-ms="2649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="init()[pri:0, instance:Test.LoginTest@77888435]" started-at="2022-12-11T21:45:31 CST" name="init" finished-at="2022-12-11T21:45:31 CST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="run()[pri:0, instance:Test.LoginTest@77888435]" started-at="2022-12-11T21:45:31 CST" name="run" finished-at="2022-12-11T21:45:31 CST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
       </class> <!-- Test.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

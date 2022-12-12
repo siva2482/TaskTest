@@ -1,51 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="7" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-12T11:38:40 CST" name="Suite" finished-at="2022-12-12T11:38:44 CST" duration-ms="4394">
+  <suite started-at="2022-12-12T11:49:59 CST" name="Suite" finished-at="2022-12-12T11:50:00 CST" duration-ms="1397">
     <groups>
     </groups>
-    <test started-at="2022-12-12T11:38:40 CST" name="Test" finished-at="2022-12-12T11:38:44 CST" duration-ms="4394">
+    <test started-at="2022-12-12T11:49:59 CST" name="Test" finished-at="2022-12-12T11:50:00 CST" duration-ms="1397">
       <class name="Test.deleteTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:Test.deleteTest@397fbdb]" started-at="2022-12-12T11:38:40 CST" name="init" finished-at="2022-12-12T11:38:40 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:Test.deleteTest@397fbdb]" started-at="2022-12-12T11:49:59 CST" name="init" finished-at="2022-12-12T11:49:59 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="run()[pri:0, instance:Test.deleteTest@397fbdb]" started-at="2022-12-12T11:38:43 CST" name="run" finished-at="2022-12-12T11:38:44 CST" duration-ms="694" status="PASS">
+        <test-method signature="run()[pri:0, instance:Test.deleteTest@397fbdb]" started-at="2022-12-12T11:50:00 CST" name="run" finished-at="2022-12-12T11:50:00 CST" duration-ms="321" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-1U92PBD', ip: '192.168.5.190', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e37b68bb9f34251c7829d8b0dfb1d64, getElementText {id=bb7ed5ad-2c84-4bf8-bab1-66af4ded3263}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\usinc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55539/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2e37b68bb9f34251c7829d8b0dfb1d64)] -> xpath: //div//child::h5]
+Session ID: 2e37b68bb9f34251c7829d8b0dfb1d64]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-1U92PBD', ip: '192.168.5.190', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e37b68bb9f34251c7829d8b0dfb1d64, getElementText {id=bb7ed5ad-2c84-4bf8-bab1-66af4ded3263}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\usinc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55539/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2e37b68bb9f34251c7829d8b0dfb1d64)] -> xpath: //div//child::h5]
+Session ID: 2e37b68bb9f34251c7829d8b0dfb1d64
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+at Pages.TaskPage.checkDelete(TaskPage.java:73)
+at Test.deleteTest.run(deleteTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
       </class> <!-- Test.deleteTest -->
       <class name="Test.UploadTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:Test.UploadTest@3590fc5b]" started-at="2022-12-12T11:38:40 CST" name="init" finished-at="2022-12-12T11:38:40 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:Test.UploadTest@3590fc5b]" started-at="2022-12-12T11:49:59 CST" name="init" finished-at="2022-12-12T11:49:59 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="run()[pri:0, instance:Test.UploadTest@3590fc5b]" started-at="2022-12-12T11:38:41 CST" name="run" finished-at="2022-12-12T11:38:43 CST" duration-ms="2160" status="PASS">
+        <test-method signature="run()[pri:0, instance:Test.UploadTest@3590fc5b]" started-at="2022-12-12T11:50:00 CST" name="run" finished-at="2022-12-12T11:50:00 CST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+Unhandled exception type InterruptedException
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+Unhandled exception type InterruptedException
+
+at Test.UploadTest.run(UploadTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
       </class> <!-- Test.UploadTest -->
       <class name="Test.TaskTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:Test.TaskTest@41d477ed]" started-at="2022-12-12T11:38:40 CST" name="init" finished-at="2022-12-12T11:38:40 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:Test.TaskTest@41d477ed]" started-at="2022-12-12T11:49:59 CST" name="init" finished-at="2022-12-12T11:49:59 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="run()[pri:0, instance:Test.TaskTest@41d477ed]" started-at="2022-12-12T11:38:40 CST" name="run" finished-at="2022-12-12T11:38:41 CST" duration-ms="1274" status="PASS">
+        <test-method signature="run()[pri:0, instance:Test.TaskTest@41d477ed]" started-at="2022-12-12T11:49:59 CST" name="run" finished-at="2022-12-12T11:50:00 CST" duration-ms="771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
       </class> <!-- Test.TaskTest -->
       <class name="Test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.LoginTest@71d44a3]" started-at="2022-12-12T11:38:36 CST" name="setup" finished-at="2022-12-12T11:38:40 CST" duration-ms="3427" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.LoginTest@71d44a3]" started-at="2022-12-12T11:49:55 CST" name="setup" finished-at="2022-12-12T11:49:59 CST" duration-ms="3218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="init()[pri:0, instance:Test.LoginTest@71d44a3]" started-at="2022-12-12T11:38:40 CST" name="init" finished-at="2022-12-12T11:38:40 CST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:Test.LoginTest@71d44a3]" started-at="2022-12-12T11:49:59 CST" name="init" finished-at="2022-12-12T11:49:59 CST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="run()[pri:0, instance:Test.LoginTest@71d44a3]" started-at="2022-12-12T11:38:40 CST" name="run" finished-at="2022-12-12T11:38:40 CST" duration-ms="197" status="PASS">
+        <test-method signature="run()[pri:0, instance:Test.LoginTest@71d44a3]" started-at="2022-12-12T11:49:59 CST" name="run" finished-at="2022-12-12T11:49:59 CST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->

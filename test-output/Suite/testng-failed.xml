@@ -10,6 +10,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- Test.UploadTest -->
+      <class name="Test.deleteTest">
+        <methods>
+          <include name="init"/>
+          <include name="setup"/>
+          <include name="run"/>
+        </methods>
+      </class> <!-- Test.deleteTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

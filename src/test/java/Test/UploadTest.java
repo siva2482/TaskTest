@@ -17,7 +17,7 @@ TaskPage tobj=null;
 		
 	}
 	@Test
-	public void run()
+	public void run() throws InterruptedException
 	{
 		tobj.deleteTask();
 	}

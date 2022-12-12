@@ -40,7 +40,7 @@ public class TaskPage extends TestBase{
 		 Taskbutton.click();
 		 
 	 }
-	 public void deleteTask()
+	 public void deleteTask() throws InterruptedException
 	 {
 		 //driver.findElement(By.xpath("(//div//child::div[@class='card w-100']//input[@type='file'])[1]")).click();
 		// driver.findElement(By.xpath("(//div//child::div[@class='card w-100']//input[@type='file'])[1]")).sendKeys("D://input.txt");
@@ -52,7 +52,8 @@ public class TaskPage extends TestBase{
 		 {
 		 if(e.getText().equalsIgnoreCase("Selenium"))
 		 {
-			 driver.findElement(By.xpath("//div//button[contains(text(),'Delete')]")).click();
+			 Thread.sleep(4000);
+			 e.findElement(By.xpath("//div//h5//preceding-sibling::button")).click();
 		 }
 		 }
 		 }catch(StaleElementReferenceException s)
@@ -69,7 +70,7 @@ public class TaskPage extends TestBase{
 			 List<WebElement> tasks=driver.findElements(By.xpath("//div//child::h5"));
 			 for(WebElement x:tasks)
 			 {
-			 if(x.getText().equalsIgnoreCase("Selinium"))
+			 if(x.getText().equalsIgnoreCase("Selenium"))
 			 {
 				count++; 
 			 }
